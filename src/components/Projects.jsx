@@ -5,10 +5,34 @@ import { GithubIcon } from './SocialIcons';
 
 const PROJECTS = [
   {
+    title: 'Personal Developer Portfolio',
+    description:
+      'This portfolio — a high-performance personal website built with React, Tailwind CSS, and Framer Motion. Features a cinematic terminal preloader, custom star cursor with sparkle effects, glassmorphic UI, continuous design gallery, and a live EmailJS contact form.',
+    color: '#00f5ff',
+    badge: 'Full-Stack',
+    featured: true,
+    stack: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite', 'EmailJS'],
+    metrics: ['Custom cursor & sparkle FX', 'Cinematic 4s preloader', 'EmailJS contact form'],
+    github: 'https://github.com/Vokeh254/My_PortfolioV2',
+    live: 'https://kelvin-njoroge.netlify.app',
+  },
+  {
+    title: 'Nexus GPS Class Attendance',
+    description:
+      'Cross-platform mobile app (iOS + Android + Web) built with Expo React Native and Supabase. Students can only mark attendance when physically inside the classroom via GPS geofencing — preventing proxy sign-ins by binding every record to the authenticated student\'s JWT identity.',
+    color: '#00f5ff',
+    badge: 'Mobile',
+    featured: true,
+    stack: ['Expo', 'React Native', 'Supabase', 'PostgreSQL', 'JWT', 'GPS / Geofencing'],
+    metrics: ['GPS geofence enforcement', 'Anti-proxy JWT binding', 'iOS + Android + Web'],
+    github: 'https://github.com/Vokeh254/Nexus-GPS-Class-Attendance',
+    live: null,
+  },
+  {
     title: 'Healthcare AI Booking Agent',
     description:
       'A conversational NLP agent that enables patients to book, reschedule, and cancel clinic appointments via natural language chat. Integrates intent recognition, entity extraction, and dialogue management with a real clinic booking backend.',
-    color: '#00f5ff',
+    color: '#bf00ff',
     badge: 'AI / NLP',
     featured: true,
     stack: ['Python', 'Rasa', 'FastAPI', 'MongoDB', 'React', 'Docker', 'WebSockets'],
@@ -20,7 +44,7 @@ const PROJECTS = [
     title: 'Disease Simulation Platform',
     description:
       'Interactive epidemic simulation engine implementing SEIR/SIR compartmental models with real population data. Features a live parameter control dashboard and geo-visualisation of disease spread across Kenyan counties.',
-    color: '#bf00ff',
+    color: '#39ff14',
     badge: 'Data Science',
     featured: true,
     stack: ['React', 'Python', 'D3.js', 'Node.js', 'PostgreSQL', 'Docker'],
@@ -32,7 +56,7 @@ const PROJECTS = [
     title: 'MERN E-Commerce Platform',
     description:
       'Full-stack e-commerce application with JWT authentication, product management, cart, checkout flow, and an admin dashboard. Deployed in Docker containers with Nginx reverse proxy.',
-    color: '#39ff14',
+    color: '#ff6b35',
     badge: 'Full-Stack',
     featured: false,
     stack: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Docker', 'Nginx'],
@@ -44,7 +68,7 @@ const PROJECTS = [
     title: 'Real-Time Collaborative Whiteboard',
     description:
       'Multi-user drawing and brainstorming tool with WebSocket-powered real-time sync, infinite canvas, shape tools, and session sharing via unique room codes.',
-    color: '#ff6b35',
+    color: '#00f5ff',
     badge: 'Real-Time',
     featured: false,
     stack: ['React', 'Node.js', 'Socket.io', 'Canvas API', 'Redis'],
@@ -68,7 +92,7 @@ const PROJECTS = [
     title: 'DevOps CI/CD Pipeline Template',
     description:
       'Production-ready GitHub Actions + Docker workflow template for Node.js applications. Includes automated testing, image builds, push to Docker Hub, and deploy-to-server stages.',
-    color: '#00f5ff',
+    color: '#bf00ff',
     badge: 'DevOps',
     featured: false,
     stack: ['Docker', 'GitHub Actions', 'Node.js', 'Shell', 'Nginx'],
@@ -78,7 +102,7 @@ const PROJECTS = [
   },
 ];
 
-const FILTERS = ['All', 'AI / NLP', 'Full-Stack', 'Data Science', 'Security', 'DevOps', 'Real-Time'];
+const FILTERS = ['All', 'Mobile', 'AI / NLP', 'Full-Stack', 'Data Science', 'Security', 'DevOps', 'Real-Time'];
 
 function ProjectCard({ project, index }) {
   const ref = useRef(null);

@@ -2,6 +2,8 @@
 
 > Full-Stack Software Developer · AI Project Lead · Mathematics Graduate · Nairobi, Kenya
 
+🌐 **Live site:** [kelvin-njoroge.netlify.app](https://kelvin-njoroge.netlify.app)
+
 Live portfolio built with React, Tailwind CSS, and Framer Motion. Features a cinematic preloader, interactive sections, a custom cursor, and a working contact form.
 
 ---
